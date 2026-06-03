@@ -1013,7 +1013,6 @@ RESPONSIVO
 
 }
 
-/* MOBILE */
 @media(max-width:768px){
 
 .navbar{
@@ -1024,31 +1023,38 @@ RESPONSIVO
     padding-top:120px;
 }
 
-.section{
-    padding:70px 16px;
-}
-
-.section-title{
-    font-size:2rem;
-}
-
-/* 🔒 trava scroll horizontal */
+/* 🔒 trava horizontal */
 html, body{
     overflow-x:hidden;
     max-width:100%;
 }
 
-/* HERO TEXTO */
-.hero h1,
+/* 📱 TIPOGRAFIA PADRÃO MOBILE (corrigido) */
+.hero h1{
+    font-size:1.8rem;
+    white-space:normal;
+    text-align:center;
+}
+
 .hero h2{
-    white-space:nowrap;
+    font-size:1rem;
+    white-space:normal;
+    text-align:center;
+}
+
+/* SEÇÕES */
+.section{
+    padding:70px 16px;
+}
+
+.section-title{
+    font-size:1.5rem;
 }
 
 /* BOTÃO CV */
 .btn-cv{
-    font-size:0.85rem;
+    font-size:0.8rem;
     padding:6px 10px;
-    font-weight:600;
     white-space:nowrap;
 }
 
@@ -1061,12 +1067,13 @@ html, body{
     flex-wrap:nowrap;
 }
 
+/* nome padrão */
 .hero-name{
+    font-size:0.9rem;
     white-space:nowrap;
 }
 
 }
-
 /* =========================
 ESTILOS GERAIS (SEM MUDANÇA)
 ========================= */
