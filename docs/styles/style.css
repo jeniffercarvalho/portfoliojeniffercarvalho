@@ -981,67 +981,99 @@ body::before{
 }
 
 
-
 /* =========================
 RESPONSIVO
 ========================= */
 
+/* DESKTOP / TABLET GRANDE */
 @media(max-width:992px){
 
-    .hero{
-        flex-direction:column-reverse;
-        text-align:center;
-    }
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+}
 
-    .hero-social{
-        justify-content:center;
-    }
+.hero-social{
+    justify-content:center;
+}
 
-    .about-container{
-        flex-direction:column;
-        text-align:center;
-    }
+.about-container{
+    flex-direction:column;
+    text-align:center;
+}
 
-    .about-image img{
-        width:260px;
-    }
+.about-image img{
+    width:260px;
+}
 
-   
-    .hero-image img{
-        width:260px;
-        height:260px;
-    }
+.hero-image img{
+    width:260px;
+    height:260px;
+}
 
 }
+
+/* MOBILE */
 @media(max-width:768px){
 
-    .navbar{
-        display:none;
-    }
-
-    .hero{
-        padding-top:120px;
-    }
-
-    .section-title{
-        font-size:2rem;
-    }
-
-   
-  
-    /* ===== APPLE CLEAN PATCH ===== */
-
-
-@media(max-width:768px){
-    .section{
-        padding:70px 16px;
-    }
+.navbar{
+    display:none;
 }
+
+.hero{
+    padding-top:120px;
+}
+
+.section{
+    padding:70px 16px;
+}
+
+.section-title{
+    font-size:2rem;
+}
+
+/* 🔒 trava scroll horizontal */
+html, body{
+    overflow-x:hidden;
+    max-width:100%;
+}
+
+/* HERO TEXTO */
+.hero h1,
+.hero h2{
+    white-space:nowrap;
+}
+
+/* BOTÃO CV */
+.btn-cv{
+    font-size:0.85rem;
+    padding:6px 10px;
+    font-weight:600;
+    white-space:nowrap;
+}
+
+/* BOTÃO + NOME */
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    flex-wrap:nowrap;
+}
+
+.hero-name{
+    white-space:nowrap;
+}
+
+}
+
+/* =========================
+ESTILOS GERAIS (SEM MUDANÇA)
+========================= */
 
 body{
     line-height:1.6;
 }
-
 
 .section-title{
     letter-spacing:-0.3px;
@@ -1061,49 +1093,4 @@ body{
 
 :root{
     --primary:#4f8cff;
-}
-
-.btn-cv{
-    font-size:0.85rem;
-    padding:8px 12px;
-    font-weight:600;
-    white-space:nowrap;
-}
-
-    @media(max-width:768px){
-
-/* 🔒 trava horizontal só no mobile */
-html, body{
-   overflow-x: hidden;
-}
-
-/* HERO */
-.hero h1,
-.hero h2{
-    white-space:nowrap;
-}
-
-/* BOTÃO + NOME lado a lado */
-.hero-buttons{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:10px;
-    flex-wrap:nowrap;
-}
-
-/* botão CV menor */
-.btn-cv{
-    font-size:0.85rem;
-    padding:6px 10px;
-    white-space:nowrap;
-}
-
-/* nome ao lado */
-.hero-name{
-    white-space:nowrap;
-}
-
-}
-    
 }
