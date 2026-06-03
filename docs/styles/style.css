@@ -1042,9 +1042,6 @@ body{
     line-height:1.6;
 }
 
-.hero h1{
-    letter-spacing:-0.5px;
-}
 
 .section-title{
     letter-spacing:-0.3px;
@@ -1077,7 +1074,7 @@ body{
 
 /* 🔒 trava horizontal só no mobile */
 html, body{
-    overflow-x:hidden;
+   overflow-x: hidden;
 }
 
 /* HERO */
