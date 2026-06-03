@@ -1006,10 +1006,7 @@ RESPONSIVO
         width:260px;
     }
 
-    .hero h1{
-        font-size:3rem;
-    }
-
+   
     .hero-image img{
         width:260px;
         height:260px;
@@ -1026,28 +1023,14 @@ RESPONSIVO
         padding-top:120px;
     }
 
-    .hero h1{
-        font-size:2.3rem;
-    }
-
-    .hero h2{
-        font-size:1.1rem;
-    }
-
     .section-title{
         font-size:2rem;
     }
 
-    .section{
-        padding:60px 16px;
-    }
-
+   
   
     /* ===== APPLE CLEAN PATCH ===== */
 
-.section{
-    padding:90px 20px;
-}
 
 @media(max-width:768px){
     .section{
@@ -1083,11 +1066,47 @@ body{
     --primary:#4f8cff;
 }
 
-.btn-cv,
-.project-link{
+.btn-cv{
+    font-size:0.85rem;
+    padding:8px 12px;
     font-weight:600;
-    letter-spacing:0.2px;
+    white-space:nowrap;
 }
 
+    @media(max-width:768px){
+
+/* 🔒 trava horizontal só no mobile */
+html, body{
+    overflow-x:hidden;
+}
+
+/* HERO */
+.hero h1,
+.hero h2{
+    white-space:nowrap;
+}
+
+/* BOTÃO + NOME lado a lado */
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    flex-wrap:nowrap;
+}
+
+/* botão CV menor */
+.btn-cv{
+    font-size:0.85rem;
+    padding:8px 12px;
+    white-space:nowrap;
+}
+
+/* nome ao lado */
+.hero-name{
+    white-space:nowrap;
+}
+
+}
     
 }
