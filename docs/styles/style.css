@@ -1046,9 +1046,9 @@ html, body{
 
 /* botão CV */
 .btn-cv{
-    font-size: 0.85rem;
-    padding: 6px 10px;
-    white-space: nowrap;
+    font-size: 1rem;
+    padding: 10px 18px;
+    margin-right: auto;
 }
 
 /* nome */
