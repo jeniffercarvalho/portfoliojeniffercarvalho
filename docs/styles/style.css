@@ -1057,4 +1057,31 @@ html, body{
     font-size: 0.95rem;
 }
 
+/* esconde tudo da nav por padrão */
+.nav-links,
+.nav-menu,
+.nav ul,
+.menu,
+.nav-items{
+    display: none;
+}
+
+/* mantém nome, CV e desenho */
+.hero-name,
+.btn-cv,
+.nav-logo,
+.logo,
+.hero-image,
+.hero-image img{
+    display: block;
+}
+
+/* garante centralização da nav */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    }
 }
