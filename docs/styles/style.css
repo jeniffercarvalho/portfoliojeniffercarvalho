@@ -1,4 +1,4 @@
-/* =========================
+Mi/* =========================
 RESET
 ========================= */
 
@@ -1065,7 +1065,7 @@ nav{
     gap: 10px;
 }
 
-/* esconde tudo da nav */
+/* esconde tudo da nav no mobile */
 nav *{
     display: none;
 }
@@ -1075,6 +1075,9 @@ nav *{
 .logo,
 .hero-name,
 .btn-cv{
+    display: block;
+    white-space: nowrap;
+}
     display: block;
 }
 
