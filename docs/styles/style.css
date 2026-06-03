@@ -1025,11 +1025,11 @@ html, body{
 .hero h1,
 .hero h2{
     white-space: normal;   /* permite quebrar linha */
-    font-size: 1.4rem;     /* reduz título */
+    font-size: 1.4rem;
     line-height: 1.3;
 }
 
-/* texto abaixo do título (se existir) */
+/* texto abaixo do título */
 .hero p{
     font-size: 0.95rem;
     line-height: 1.4;
@@ -1041,10 +1041,10 @@ html, body{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    flex-wrap: wrap; /* evita estourar tela */
+    flex-wrap: wrap;
 }
 
-/* botão CV menor */
+/* botão CV */
 .btn-cv{
     font-size: 0.85rem;
     padding: 6px 10px;
@@ -1057,31 +1057,25 @@ html, body{
     font-size: 0.95rem;
 }
 
-/* esconde tudo da nav por padrão */
-.nav-links,
-.nav-menu,
-.nav ul,
-.menu,
-.nav-items{
+/* 🔴 NAV AJUSTADA (SEM MEXER NA ESTRUTURA) */
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* esconde tudo da nav */
+nav *{
     display: none;
 }
 
-/* mantém nome, CV e desenho */
-.hero-name,
-.btn-cv,
+/* mostra apenas o que você quer */
 .nav-logo,
 .logo,
-.hero-image,
-.hero-image img{
+.hero-name,
+.btn-cv{
     display: block;
 }
 
-/* garante centralização da nav */
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-    }
 }
