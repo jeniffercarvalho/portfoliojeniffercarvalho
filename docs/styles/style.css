@@ -985,7 +985,6 @@ body::before{
 RESPONSIVO
 ========================= */
 
-/* DESKTOP / TABLET GRANDE */
 @media(max-width:992px){
 
 .hero{
@@ -1006,59 +1005,30 @@ RESPONSIVO
     width:260px;
 }
 
+
 .hero-image img{
     width:260px;
     height:260px;
 }
 
+
 }
 
 @media(max-width:768px){
 
-.navbar{
-    display:none;
-}
 
-.hero{
-    padding-top:120px;
-}
-
-/* 🔒 trava horizontal */
+/* 🔒 trava horizontal só no mobile */
 html, body{
-    overflow-x:hidden;
-    max-width:100%;
+overflow-x: hidden;
 }
 
-/* 📱 TIPOGRAFIA PADRÃO MOBILE (corrigido) */
-.hero h1{
-    font-size:1.8rem;
-    white-space:normal;
-    text-align:center;
-}
-
+/* HERO */
+.hero h1,
 .hero h2{
-    font-size:1rem;
-    white-space:normal;
-    text-align:center;
+white-space:nowrap;
 }
 
-/* SEÇÕES */
-.section{
-    padding:70px 16px;
-}
-
-.section-title{
-    font-size:1.5rem;
-}
-
-/* BOTÃO CV */
-.btn-cv{
-    font-size:0.8rem;
-    padding:6px 10px;
-    white-space:nowrap;
-}
-
-/* BOTÃO + NOME */
+/* BOTÃO + NOME lado a lado */
 .hero-buttons{
     display:flex;
     justify-content:center;
@@ -1067,37 +1037,19 @@ html, body{
     flex-wrap:nowrap;
 }
 
-/* nome padrão */
+/* botão CV menor */
+.btn-cv{
+    font-size:0.85rem;
+    padding:6px 10px;
+    white-space:nowrap;
+}
+
+
+/* nome ao lado */
 .hero-name{
-    font-size:0.9rem;
     white-space:nowrap;
 }
 
 }
-/* =========================
-ESTILOS GERAIS (SEM MUDANÇA)
-========================= */
 
-body{
-    line-height:1.6;
-}
-
-.section-title{
-    letter-spacing:-0.3px;
-}
-
-.project-card,
-.skill-card,
-.experience-card{
-    box-shadow:0 10px 25px rgba(0,0,0,.10);
-}
-
-.project-card:hover,
-.skill-card:hover,
-.experience-card:hover{
-    box-shadow:0 18px 35px rgba(0,0,0,.18);
-}
-
-:root{
-    --primary:#4f8cff;
 }
