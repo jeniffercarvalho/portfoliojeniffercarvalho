@@ -1089,11 +1089,5 @@ body{
     letter-spacing:0.2px;
 }
 
-    /*--- LOCK DA TELA -----*/
-
-html, body {
-    overflow-x: hidden;
-}
-
     
 }
