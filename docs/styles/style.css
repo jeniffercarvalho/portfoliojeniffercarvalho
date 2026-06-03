@@ -1048,7 +1048,7 @@ html, body{
 .btn-cv{
     font-size: 1rem;
     padding: 10px 18px;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 /* nome */
