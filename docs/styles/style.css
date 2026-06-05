@@ -1092,13 +1092,6 @@ nav{
 
 }
 
-/* esconde tudo da nav no mobile */
-
-nav *{
-
-    display: none;
-
-}
 
 /* mostra apenas o que você quer */
 
@@ -1114,7 +1107,12 @@ nav *{
 
     white-space: nowrap;
 }
-    
+  .btn-cv,
+.project-link{
+    font-weight:600;
+    letter-spacing:0.2px;
+}
+  
 }
 
 
