@@ -734,6 +734,12 @@ body{
     0 0 25px rgba(59,130,246,.15);
 }
 
+    /* botão aparece no desktop */
+.btn-cv{
+    display: inline-flex;
+}
+
+
 /* GLOW ANIMADO */
 
 .hero-image{
@@ -1072,20 +1078,19 @@ RESPONSIVO
         align-items: center;
         gap: 12px;
     }
-
-    /* esconde logo e links */
-    .nav-logo,
-    .logo,
-    .nav-links{
+  /* esconde os links da navegação */
+    nav a{
         display: none;
     }
 
-    /* mostra apenas nome e botão */
+    /* mostra apenas nome e botão CV */
     .hero-name,
     .btn-cv{
-        display: block;
+        display: inline-flex;
         white-space: nowrap;
     }
+
+
 }
 
 
