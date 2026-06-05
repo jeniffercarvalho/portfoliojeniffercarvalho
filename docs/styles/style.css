@@ -1077,7 +1077,25 @@ html, body{
     margin: 0 auto;
     transform: translateX(-8px);
 }
+    
+/* DESKTOP - garante que o botão apareça */
+.btn-cv{
+    display: inline-flex;
+}
 
+    /* esconde tudo da nav */
+    nav > *{
+        display: none;
+    }
+
+    /* mostra apenas nome e botão CV */
+    .hero-name,
+    .btn-cv{
+        display: block;
+        white-space: nowrap;
+    }
+
+}
 /* 🔴 NAV AJUSTADA (SEM MEXER NA ESTRUTURA) */
 
 nav{
@@ -1091,7 +1109,6 @@ nav{
     gap: 10px;
 
 }
-
 
 /* mostra apenas o que você quer */
 
@@ -1107,12 +1124,8 @@ nav{
 
     white-space: nowrap;
 }
-  .btn-cv,
-.project-link{
-    font-weight:600;
-    letter-spacing:0.2px;
-}
-  
+
+
 }
 
 
