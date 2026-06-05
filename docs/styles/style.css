@@ -1083,4 +1083,13 @@ nav *{
     display: block;
 }
 
+/* DESKTOP */
+@media (min-width: 769px) {
+  .btn-cv {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
 }
+
+
