@@ -1077,15 +1077,6 @@ html, body{
     margin: 0 auto;
     transform: translateX(-8px);
 }
-/* nome */
-
-.hero-name{
-
-    white-space: normal;
-
-    font-size: 0.95rem;
-
-}
 
 /* 🔴 NAV AJUSTADA (SEM MEXER NA ESTRUTURA) */
 
@@ -1122,7 +1113,8 @@ nav *{
     display: block;
 
     white-space: nowrap;
-
+}
+    
 }
 
 
