@@ -1080,8 +1080,7 @@ nav *{
     display: block;
     white-space: nowrap;
 }
-    display: block;
-}
+  
 
 /* DESKTOP */
 @media (min-width: 769px) {
