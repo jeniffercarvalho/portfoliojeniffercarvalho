@@ -1101,6 +1101,16 @@ RESPONSIVO
         white-space: nowrap;
     }
 
+.mobile-break{
+    display:none;
+}
+
+@media(max-width:768px){
+    .mobile-break{
+        display:block;
+    }
+}
+
 
 }
 
