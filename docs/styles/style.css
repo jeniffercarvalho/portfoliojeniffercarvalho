@@ -1099,10 +1099,33 @@ RESPONSIVO
         white-space: nowrap;
     }
 
-.mobile-break{
-    display:none;
+
+.hero-title{
+    text-align:center;
 }
 
+.hero-role{
+    display:inline;
+}
+
+/* MOBILE */
+
+
+    .mobile-break{
+        display:block;
+    }
+
+    .hero-role{
+        display:block;
+        margin-top:12px;
+    }
+
+    .hero-title{
+        font-size:1.8rem;
+        line-height:1.2;
+    }
+
+}
 
 
 
