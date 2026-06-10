@@ -1032,18 +1032,12 @@ MOBILE
     /* HERO */
 
     .hero h1{
-        font-size:1.8rem;
-        line-height:1.2;
-        text-align:center;
-        margin-bottom:20px;
-        white-space:normal; /* CORREÇÃO */
-    }
-
-    .hero h1 span{
-        display:block;
-        margin:0;
-    }
-
+    font-size:1.8rem;
+    line-height:1;
+    text-align:center;
+    margin-bottom:0;
+    white-space:normal;
+}
     .hero h2{
         font-size:1.2rem;
         line-height:1.3;
