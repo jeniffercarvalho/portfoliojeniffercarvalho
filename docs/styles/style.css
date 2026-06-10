@@ -1022,102 +1022,91 @@ TABLET
 /* =========================
 MOBILE
 ========================= */
-@media (max-width: 768px){
+@media(max-width:768px){
 
-    html,
-    body{
-        overflow-x: hidden;
-    }
-
-    /* HEADER */
-    .header{
-        padding: 15px 5%;
-    }
-
-    .navbar{
-        display: none;
-    }
-
-    .logo{
-        font-size: 1rem;
-    }
-
-    .btn-cv{
-        padding: 10px 14px;
-        font-size: .9rem;
+    /* trava horizontal */
+    html, body{
+        overflow-x:hidden;
     }
 
     /* HERO */
-    .hero{
-        padding: 110px 20px 40px;
-        gap: 25px;
+
+    .hero h1{
+        font-size:1.8rem;
+        line-height:1.2;
+        text-align:center;
+        margin-bottom:20px;
+        white-space:normal; /* CORREÇÃO */
     }
 
-    .hero-image img{
-        width: 220px;
-        height: 220px;
+    .hero h1 span{
+        display:block;
+        margin:0;
     }
 
-    .badge{
-        margin-bottom: 12px;
-    }
-
-    .hero-title{
-        font-size: 1.8rem;
-        line-height: 1.2;
-        text-align: center;
-    }
-
-    .mobile-break{
-        display: block;
-    }
-
-    .hero-role{
-        display: block;
-        margin-top: 2px;
+    .hero h2{
+        font-size:1.2rem;
+        line-height:1.3;
+        text-align:center;
     }
 
     .hero p{
-        font-size: .95rem;
-        line-height: 1.6;
-        padding: 0;
-        text-align: center;
+        font-size:0.95rem;
+        line-height:1.4;
+        text-align:center;
+        padding:0 15px;
     }
 
-    .hero-social{
-        justify-content: center;
+    /* BOTÕES */
+    .hero-buttons{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:10px;
+        flex-wrap:wrap;
     }
 
-    /* SOBRE */
-    .about-content h2{
-        font-size: 2rem;
+    .btn-cv{
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        font-size:1rem;
+        padding:10px 10px;
     }
 
-    /* SKILLS */
-    .skills-container{
-        grid-template-columns: 1fr;
-        padding: 25px;
-        gap: 25px;
+    /* NAV */
+    nav{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:12px;
     }
 
-    /* PROJETOS */
-    .projects-grid{
-        gap: 20px;
+    /* esconde os links da navegação */
+    nav a{
+        display:none;
     }
 
-    .project-card{
-        width: 100%;
-        max-width: 400px;
+    /* mostra apenas nome e botão CV */
+    .hero-name,
+    .btn-cv{
+        display:inline-flex;
+        white-space:nowrap;
     }
 
-    /* TÍTULOS */
-    .section-title{
-        font-size: 1.9rem;
+    .hero-title{
+        text-align:center;
+        font-size:1.8rem;
+        line-height:1.2;
     }
 
-    /* CONTATO */
-    .contact-links{
-        flex-wrap: wrap;
+    .hero-role{
+        display:block;
+        margin-top:0;
+    }
+
+    .mobile-break{
+        display:block;
     }
 }
 
