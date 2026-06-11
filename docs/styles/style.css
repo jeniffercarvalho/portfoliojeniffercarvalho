@@ -1038,7 +1038,7 @@ MOBILE
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
+    gap: 3px;
   }
 
   .hero-title .divider {
