@@ -1029,23 +1029,32 @@ MOBILE
         overflow-x:hidden;
     }
 
+
     /* HERO */
 
-.hero-title span{
-    display: block;
-    margin-top: 8px;
+/* Mobile */
+@media (max-width: 768px){
+
+    .desktop-bar{
+        display: none;
+    }
+
+    .hero-title span:last-child{
+        display: block;
+        margin-top: 8px;
+    }
+
 }
 
 /* Desktop */
-@media(min-width:769px){
+@media (min-width: 769px){
 
-    .hero-title span{
+    .desktop-bar{
         display: inline;
-        margin-top: 0;
     }
 
-    .hero-title span::before{
-        content: " | ";
+    .hero-title span:last-child{
+        display: inline;
     }
 
 }
