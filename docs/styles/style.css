@@ -1034,8 +1034,9 @@ MOBILE
 
 /* MOBILE */
 @media (max-width: 768px) {
+
   .hero-title {
-    font-size: 1.8rem; /* diminui o H1 */
+    font-size: 1.6rem; /* diminui o H1 */
     line-height: 1.2;
   }
 
