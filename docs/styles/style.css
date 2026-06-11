@@ -1034,18 +1034,22 @@ MOBILE
     }
  
 
-/* MOBILE */
-
-  .hero-title{
-    font-size:1.8rem;
-    text-align:center;
-    line-height:1.2;
-    margin-bottom:10px;
+  .hero-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
   }
 
-  .hero-title span{
-    display:block;
+  .hero-title .divider {
+    display: none; /* some com o "|" no mobile */
   }
+
+  .hero-subtitle {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
 
   .hero h2{
     text-align:center;
