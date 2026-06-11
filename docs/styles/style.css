@@ -1033,15 +1033,26 @@ MOBILE
 
 /* MOBILE */
 
-  .hero-title {
-    white-space: normal;
-    font-size: 1.8rem;
-    text-align: center;
-  }
+  
+  .hero-title{
+  text-align:center;
+  font-size:1.8rem;
+  white-space:normal;
+  margin-bottom:10px;
+  line-height:1.2;
+}
 
-  .hero-title span {
-    display: inline;
-  }
+.hero-title span{
+  display:inline;
+}
+
+.hero h2{
+  text-align:center;
+  font-size:1.2rem;
+  margin-top:10px;
+  margin-bottom:15px;
+  line-height:1.3;
+}
 
 
     .hero p{
