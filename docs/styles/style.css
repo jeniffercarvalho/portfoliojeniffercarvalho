@@ -152,7 +152,6 @@ HERO
 .hero-title {
   font-size: 2.5rem;
   text-align: center;
-  white-space: nowrap; /* impede quebra */
 }
 
 .hero-title span {
@@ -1035,20 +1034,15 @@ MOBILE
 /* MOBILE */
 
   .hero-title {
-    white-space: normal; /* libera quebra */
+    white-space: normal;
     font-size: 1.8rem;
+    text-align: center;
   }
 
   .hero-title span {
-    display: block;
-    margin-top: 5px;
+    display: inline;
   }
-}
-    .hero h2{
-        font-size:1.2rem;
-        line-height:1.3;
-        text-align:center;
-    }
+
 
     .hero p{
         font-size:0.95rem;
