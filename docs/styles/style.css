@@ -1031,20 +1031,24 @@ MOBILE
 
     /* HERO */
 
-    .hero-title{
-        text-align:center;
-        font-size:1.8rem;
-        line-height:1.2;
+.hero-title span{
+    display: block;
+    margin-top: 8px;
+}
+
+/* Desktop */
+@media(min-width:769px){
+
+    .hero-title span{
+        display: inline;
+        margin-top: 0;
     }
 
-    .hero-role{
-        display:block;
-        margin-top:0;
+    .hero-title span::before{
+        content: " | ";
     }
 
-    .mobile-break{
-        display:block;
-    }
+}
     .hero h2{
         font-size:1.2rem;
         line-height:1.3;
