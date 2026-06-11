@@ -1033,15 +1033,14 @@ MOBILE
  
 
 /* MOBILE */
-@media (max-width: 768px) {
 
   .hero-title {
-    font-size: 1.6rem; /* diminui o H1 */
-    line-height: 1.2;
+    white-space: normal; /* libera quebra */
+    font-size: 1.8rem;
   }
 
   .hero-title span {
-    display: block; /* quebra linha no mobile */
+    display: block;
     margin-top: 5px;
   }
 }
