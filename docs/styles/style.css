@@ -1255,7 +1255,6 @@ MOBILE
         text-align:center;
     }
 
-}
   .hero-subtitle {
     text-align: center;
     margin-top: 10px;
@@ -1324,8 +1323,8 @@ MOBILE
     .hero::before{
         opacity: 0.15;
     }
-
 }
+
     /* DESKTOP */
 @media (min-width: 993px){
 
