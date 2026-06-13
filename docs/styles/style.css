@@ -1070,52 +1070,139 @@ BOTÃO CV
     }
 }
 
-/* ========================================
-FUNDO PREMIUM
-======================================== */
+/* ==========================
+   FUNDO TECH PREMIUM
+========================== */
 
 body{
-    font-family:'Inter',sans-serif;
-
     background:
+    radial-gradient(circle at 50% 25%,
+    rgba(59,130,246,.25) 0%,
+    rgba(59,130,246,.08) 20%,
+    transparent 45%),
+
+    radial-gradient(circle at 15% 80%,
+    rgba(59,130,246,.15) 0%,
+    transparent 35%),
+
+    radial-gradient(circle at 85% 70%,
+    rgba(59,130,246,.12) 0%,
+    transparent 35%),
+
     linear-gradient(
-        135deg,
-        #020617 0%,
-        #08152d 25%,
-        #0f172a 50%,
-        #08152d 75%,
-        #020617 100%
-    );
+    180deg,
+    #020817 0%,
+    #03122f 40%,
+    #020817 100%);
 
-    color:var(--text);
-
+    min-height:100vh;
+    color:white;
     overflow-x:hidden;
+    position:relative;
 }
 
+/* Partículas esquerda */
+
 body::before{
-    content:"";
-
+    content:'';
     position:fixed;
-
-    inset:0;
+    left:-200px;
+    bottom:-150px;
+    width:600px;
+    height:600px;
 
     background:
-    repeating-linear-gradient(
-        90deg,
-        transparent,
-        transparent 170px,
-        rgba(59,130,246,.03) 171px,
-        rgba(59,130,246,.07) 172px,
-        transparent 173px,
-        transparent 340px
-    );
+    radial-gradient(
+    circle,
+    rgba(59,130,246,.8) 1px,
+    transparent 1px);
+
+    background-size:18px 18px;
+
+    mask-image:
+    radial-gradient(
+    circle,
+    black 30%,
+    transparent 80%);
+
+    opacity:.35;
+    pointer-events:none;
+    z-index:-2;
+}
+
+/* Arco tecnológico direita */
+
+body::after{
+    content:'';
+    position:fixed;
+    right:-250px;
+    top:50px;
+
+    width:700px;
+    height:700px;
+
+    border:1px solid rgba(59,130,246,.15);
+    border-radius:50%;
+
+    box-shadow:
+    0 0 50px rgba(59,130,246,.08),
+    inset 0 0 50px rgba(59,130,246,.05);
 
     pointer-events:none;
-
     z-index:-1;
 }
 
+/* Glow atrás da foto */
 
+.profile-img{
+    position:relative;
+    z-index:2;
+}
+
+.profile-img::before{
+    content:'';
+    position:absolute;
+    inset:-40px;
+
+    background:
+    radial-gradient(
+    circle,
+    rgba(59,130,246,.45),
+    transparent 70%);
+
+    filter:blur(35px);
+    z-index:-1;
+}
+
+/* Partículas suaves */
+
+.hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+
+    background:
+    radial-gradient(circle at 20% 30%, rgba(59,130,246,.7) 2px, transparent 2px),
+    radial-gradient(circle at 80% 25%, rgba(59,130,246,.5) 2px, transparent 2px),
+    radial-gradient(circle at 30% 70%, rgba(59,130,246,.6) 2px, transparent 2px),
+    radial-gradient(circle at 70% 80%, rgba(59,130,246,.4) 2px, transparent 2px);
+
+    pointer-events:none;
+    opacity:.7;
+}
+
+/* Cores */
+
+:root{
+    --bg:#020817;
+    --card:#0b1220;
+    --card-hover:#111827;
+    --text:#ffffff;
+    --text-secondary:#cbd5e1;
+    --primary:#3b82f6;
+    --primary-light:#60a5fa;
+    --border:#1e3a8a;
+}
 
 /* =========================
 TABLET
