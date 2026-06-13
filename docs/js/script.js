@@ -156,13 +156,22 @@ const btn = document.querySelector(".floating-btn");
 const footer = document.querySelector("footer");
 
 if (btn && footer) {
+  const observer = new IntersectionObserver((entries) => {
+    const entry = entries[0];
+
+    if (entry.isIntersecting) {
+      btn.classList.remove("show"); // esconde no footer
+    } else {
+      if (window.scrollY > 300) {
+        btn.classList.add("show"); // mostra fora do footer
+      }
+    }
+  });
+
+  observer.observe(footer);
+
   window.addEventListener("scroll", () => {
-    const footerTop = footer.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-
-    const isNearFooter = footerTop < windowHeight - 50;
-
-    if (window.scrollY > 300 && !isNearFooter) {
+    if (window.scrollY > 300) {
       btn.classList.add("show");
     } else {
       btn.classList.remove("show");
@@ -171,10 +180,6 @@ if (btn && footer) {
 
   btn.addEventListener("click", (e) => {
     e.preventDefault();
-
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
