@@ -1092,5 +1092,36 @@ MOBILE
         white-space:nowrap;
     }
 
-    
+
+    /* DESKTOP */
+@media (min-width: 993px){
+
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+        min-height: 90vh;
+    }
+
+    .hero-content{
+        max-width: 800px;
+        text-align: center;
+    }
+
+    .hero-social{
+        justify-content: center;
+    }
+
+    .hero h2,
+    .hero p{
+        text-align: center;
+    }
+
+    .hero-image img{
+        width: 300px;
+        height: 300px;
+    }
 }
+
+    
+
