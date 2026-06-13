@@ -660,7 +660,7 @@ Footer
 ========================= */
 footer{
     text-align:center;
-    padding:15px 20px; /* diminuiu a altura */
+    padding:12px 20px; /* bem menor */
     border-top:1px solid var(--border);
     color:#94a3e1;
 }
