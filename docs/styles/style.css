@@ -1314,8 +1314,17 @@ MOBILE
         display:inline-flex;
         white-space:nowrap;
     }
+    /* DIMINUI AS BOLINHAS DO FUNDO */
+ body::before{
+        opacity: 0.15;
+        transform: scale(0.7);
+    }
 
+    .hero::before{
+        opacity: 0.25;
+    }
 
+}
     /* DESKTOP */
 @media (min-width: 993px){
 
