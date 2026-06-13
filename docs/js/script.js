@@ -152,12 +152,17 @@ function slideProjects(direction) {
 }
 
 /* Botão Flutuante */
-
 const btn = document.querySelector(".floating-btn");
+const footer = document.querySelector("footer");
 
-if (btn) {
+if (btn && footer) {
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
+    const footerTop = footer.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    const isNearFooter = footerTop < windowHeight - 50;
+
+    if (window.scrollY > 300 && !isNearFooter) {
       btn.classList.add("show");
     } else {
       btn.classList.remove("show");
