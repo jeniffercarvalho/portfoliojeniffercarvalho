@@ -73,9 +73,10 @@ const typingElement = document.querySelector(".hero-subtitle");
 if (typingElement) {
 
   const words = [
-    "Desenvolvimento Web",
-    "Interfaces Responsivas",
-    "Suporte Técnico"
+    "Desenvolvedora Web",
+    "Suporte Técnico",
+      
+
   ];
 
   let wordIndex = 0;
