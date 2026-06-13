@@ -658,30 +658,23 @@ EXPERIÊNCIA
 /* =========================
 Footer
 ========================= */
-
 footer{
     text-align:center;
-    padding:35px 20px;
-
+    padding:20px 20px; /* menor que 35px */
     border-top:1px solid var(--border);
-
     color:#94a3b8;
 }
 
 footer p{
-    font-size:.95rem;
-    margin-bottom:6px;
+    font-size:.9rem;
+    margin-bottom:4px;
 }
 
 footer span{
     display:block;
-
     color:var(--primary);
-
-    font-size:.85rem;
-
+    font-size:.8rem;
     font-weight:500;
-
     letter-spacing:.5px;
 }
 
