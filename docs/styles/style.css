@@ -1316,12 +1316,12 @@ MOBILE
     }
     /* DIMINUI AS BOLINHAS DO FUNDO */
  body::before{
-        opacity: 0.15;
-        transform: scale(0.7);
+        opacity: 0.08;
+        transform: scale(0.6);
     }
 
     .hero::before{
-        opacity: 0.25;
+        opacity: 0.15;
     }
 
 }
